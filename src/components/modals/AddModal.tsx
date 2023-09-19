@@ -20,8 +20,6 @@ const AddModal: React.FC<addModalProps> = ({ onAdd, onClose }) => {
     e.preventDefault();
     onAdd(newItem);
 
-    console.log("time value is: ", newItem);
-
     try {
       const response = await fetch("http://127.0.0.1:3000/packages/new", {
         method: "POST",
@@ -44,9 +42,6 @@ const AddModal: React.FC<addModalProps> = ({ onAdd, onClose }) => {
         throw new Error("Network response was not ok");
       }
 
-      const data = await response.json();
-
-      console.log("data here is: ", data);
       onClose();
     } catch (error: any) {
       alert(`Login failed: ${error.message}`);

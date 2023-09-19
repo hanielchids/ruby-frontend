@@ -32,7 +32,6 @@ const MainTable = () => {
           }
 
           const data = await response.json();
-          console.log("data returned: ", data);
 
           setItems(data);
           setFetchData(false);
@@ -246,8 +245,6 @@ const MainTable = () => {
           </div>
         </div>
       </div>
-
-      {/* Modals */}
       {selectedItem && (
         <ShowModal item={selectedItem} onClose={handleCloseModal} />
       )}
@@ -263,8 +260,6 @@ const MainTable = () => {
       {isAddModalOpen && (
         <AddModal onAdd={handleAddItem} onClose={handleCloseModal} />
       )}
-
-      {/* Modals*/}
     </>
   );
 };

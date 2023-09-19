@@ -19,10 +19,6 @@ const SignUp: React.FC = () => {
       }
 
       const data = await response.json();
-
-      localStorage.setItem("user", JSON.stringify(data.user));
-      localStorage.setItem("token", data.jwt);
-
       window.history.pushState(data.user, "", "/");
 
       const token = localStorage.getItem("token");
