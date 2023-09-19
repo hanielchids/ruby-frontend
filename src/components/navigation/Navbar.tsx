@@ -1,4 +1,3 @@
-import React from "react";
 import { setAuthInfo } from "../../store/authInfoSlice";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
