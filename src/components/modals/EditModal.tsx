@@ -14,8 +14,6 @@ const EditModal: React.FC<editModalProps> = ({ item, onSave, onClose }) => {
     onSave(newItem);
     onClose();
 
-    console.log("time value is: ", newItem);
-
     try {
       const response = await fetch(`http://127.0.0.1:3000/packages/${itemId}`, {
         method: "PUT",
