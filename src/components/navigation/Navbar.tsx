@@ -61,12 +61,6 @@ const Navbar = () => {
             >
               Packages
             </a>
-            <a
-              href="/account"
-              className="block mt-4 text-lg lg:inline-block lg:mt-0 text-gray-700 hover:text-teal-400 mr-4"
-            >
-              Account
-            </a>
           </div>
           <div>
             <button
