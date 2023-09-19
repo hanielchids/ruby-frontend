@@ -21,7 +21,6 @@ const Login: React.FC = () => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
-
       const data = await response.json();
 
       if (!data.jwt) {

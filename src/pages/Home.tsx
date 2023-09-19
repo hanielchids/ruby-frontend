@@ -1,4 +1,3 @@
-import React from "react";
 import PageTitle from "../components/navigation/PageTitle";
 import MainTable from "../components/tables/MainTable";
 
